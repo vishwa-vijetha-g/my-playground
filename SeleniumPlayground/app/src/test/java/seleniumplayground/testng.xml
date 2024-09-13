@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Suite">
+    <test name = "Test Case 01">
+        <classes>
+            <class name = "seleniumplayground.tests.Utility"/>
+            <class name = "seleniumplayground.tests.TestCase01"/>
+        </classes>
+    </test>
+</suite>
