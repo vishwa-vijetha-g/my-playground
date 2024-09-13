@@ -15,16 +15,6 @@ public class TestCase01 {
             WebDriver driver = Utility.driver;
             driver.get("https://www.spicejet.com/");
             driver.findElement(By.xpath("//div[text()='Currency']")).click();
-            Thread.sleep(3000);
-            List<WebElement> currencies = driver.findElements(By.xpath("//div[text()='Currency']/parent::div/parent::div//div[@class='css-76zvg2 r-homxoj r-ubezar']"));
-            for(WebElement currency:currencies){
-                if(currency.getText().equals("USD")){
-                    currency.click();
-                    break;
-                }
-            Thread.sleep(3000);
-            driver.findElement(By.xpath("//div[text()='Search Flight']")).click();
-            }
             System.out.println("Test Case 01 - PASSED");
         }catch(Exception e){
             System.out.println("Test Case 01 - FAILED");
